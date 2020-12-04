@@ -9,3 +9,27 @@
 //    <div class="tab">topic here</div>
 //
 // NOTE: you do _not_ need to install axios as it's included in the HTML via script element
+
+const divTopics = document.querySelector('.topics')
+
+axios
+    .get('https://lambda-times-api.herokuapp.com/topics')
+    .then((res) => {
+        const dataTop = res.data.topics;
+       const newTab = tabMaker(dataTop);
+           console.log(dataTop);
+    })
+    .catch((err) => {
+        debugger;
+    })
+
+    function tabMaker(info){
+        
+       info.forEach((topic) => {
+            let tab = document.createElement('div');
+            tab.classList.add('tab');
+            tab.textContent = topic;
+            divTopics.appendChild(tab);
+        });
+        
+    };
