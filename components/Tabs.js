@@ -17,7 +17,6 @@ axios
     .then((res) => {
         const dataTop = res.data.topics;
        const newTab = tabMaker(dataTop);
-           console.log(dataTop);
     })
     .catch((err) => {
         debugger;
@@ -31,5 +30,4 @@ axios
             tab.textContent = topic;
             divTopics.appendChild(tab);
         });
-        
     };

@@ -27,11 +27,11 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
-
+ THe Document Object Model, it is an objet representation of the html elements on a webpage.
 2. What is an event?
-
+ Every user interaction with a website such as a click, a scroll, zoom, etc.
 3. What is an event listener?
-
+It is the tracking process of an event and the following action that's taken when the event occurs.
 4. Why would we convert a NodeList into an Array?
 
 5. What is a component?
